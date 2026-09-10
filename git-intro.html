@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Коротке знайомство з Git: контроль версій, можливості та базові команди." />
+    <title>Знайомство з Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container" aria-label="Основна навігація">
+        <a class="brand" href="#top" aria-label="На початок сторінки"><span class="branch-mark" aria-hidden="true">⌥</span>git</a>
+        <div class="nav-links">
+          <a href="#vcs">VCS</a>
+          <a href="#advantages">Переваги</a>
+          <a href="#commands">Команди</a>
+          <a href="#sources">Джерела</a>
+        </div>
+      </nav>
+      <div class="container hero-content">
+        <p class="eyebrow">Короткий навчальний довідник</p>
+        <h1>Знайомство з <span>Git</span></h1>
+        <p class="lead">Система контролю версій, що допомагає зберігати історію роботи та спокійно розвивати проєкти разом.</p>
+        <a class="button" href="#vcs">Дізнатись <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-line" aria-hidden="true"></div>
+    </header>
+
+    <main>
+      <section class="section container" id="vcs">
+        <div class="two-column">
+          <div><h2>Системи контролю версій та Git</h2></div>
+          <div class="prose">
+            <p><strong>Система контролю версій (VCS)</strong> — це програмне забезпечення, яке дозволяє відстежувати зміни у файлах проєкту, зберігати історію їх редагування та за потреби повертатися до попередніх версій.</p>
+            <p><strong>Git</strong> — це розподілена система контролю версій, створена для ефективної роботи з програмними проєктами. Кожен розробник має локальну копію репозиторію разом з історією змін, тому більшість операцій можна виконувати без постійного підключення до сервера.</p>
+            <p>Git часто використовується разом із сервісами для зберігання віддалених репозиторіїв, наприклад GitHub, GitLab або Bitbucket.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tinted" id="advantages">
+        <div class="container">
+          <div class="section-heading"><h2>Основні можливості та переваги Git</h2><p>Git надає розробникам зручні інструменти для керування кодом та спільної роботи над проєктами.</p></div>
+          <div class="benefits">
+            <article><b>01</b><h3>Історія змін</h3><p>Git зберігає попередні версії проєкту та дозволяє переглядати внесені зміни.</p></article>
+            <article><b>02</b><h3>Гілки</h3><p>Можна створювати окремі гілки для нових функцій, не змінюючи основну версію.</p></article>
+            <article><b>03</b><h3>Командна робота</h3><p>Декілька розробників можуть одночасно працювати над одним проєктом.</p></article>
+            <article><b>04</b><h3>Локальна робота</h3><p>Більшість операцій Git не потребують підключення до Інтернету.</p></article>
+            <article><b>05</b><h3>Відновлення версій</h3><p>За необхідності можна повернутися до попереднього стану проєкту.</p></article>
+            <article><b>06</b><h3>Швидкість</h3><p>Git ефективно працює навіть з великими проєктами та історією змін.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section commands-section container" id="commands">
+        <div class="section-heading narrow"><h2>10 базових команд Git</h2><p>Невеликий набір команд для початку роботи з репозиторієм.</p></div>
+        <ol class="command-tree">
+          <li><code>git init</code><p>Створює новий локальний Git-репозиторій у поточній папці.</p></li>
+          <li><code>git clone &lt;URL&gt;</code><p>Завантажує існуючий віддалений репозиторій на комп'ютер.</p></li>
+          <li><code>git status</code><p>Показує поточний стан репозиторію та список змінених файлів.</p></li>
+          <li><code>git add &lt;file&gt;</code><p>Додає вибраний файл до області підготовки. Для всіх змін: <code>git add .</code></p></li>
+          <li><code>git commit -m "message"</code><p>Зберігає підготовлені зміни в історії Git разом із коротким описом.</p></li>
+          <li><code>git log</code><p>Показує історію комітів репозиторію.</p></li>
+          <li><code>git branch</code><p>Показує список гілок. <code>git branch &lt;name&gt;</code> створює нову гілку.</p></li>
+          <li><code>git switch &lt;branch&gt;</code><p>Перемикає користувача на іншу гілку.</p></li>
+          <li><code>git pull</code><p>Отримує актуальні зміни з віддаленого репозиторію та інтегрує їх у локальну гілку.</p></li>
+          <li><code>git push</code><p>Відправляє локальні коміти до віддаленого репозиторію.</p></li>
+        </ol>
+      </section>
+
+      <section class="sources" id="sources">
+        <div class="container sources-inner">
+          <div><h2>Джерела</h2><p>Офіційна документація та практичні матеріали, з яких можна продовжити знайомство з Git.</p></div>
+          <ol class="source-list">
+            <li><a href="https://docs.github.com/en/get-started/learning-to-code/getting-started-with-git" target="_blank" rel="noreferrer"><span>GitHub Docs</span><strong>Getting started with Git</strong><em>↗</em></a></li>
+            <li><a href="https://docs.github.com/en/get-started/git-basics" target="_blank" rel="noreferrer"><span>GitHub Docs</span><strong>Git basics</strong><em>↗</em></a></li>
+            <li><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noreferrer"><span>Atlassian</span><strong>Git Tutorials</strong><em>↗</em></a></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer><div class="container"><span class="brand"><span class="branch-mark" aria-hidden="true">⌥</span>git</span><span>Знайомство з системою контролю версій</span><a href="#top">На початок ↑</a></div></footer>
+  </body>
+</html>
