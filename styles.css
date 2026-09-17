@@ -535,6 +535,28 @@ footer a {
   text-align: center;
 }
 
+.certificate-card {
+  display: flex;
+  min-height: 210px;
+  flex-direction: column;
+  padding: 14px;
+  border: 2px solid #d7afa8;
+  background: rgba(255, 253, 251, 0.78);
+}
+
+.certificate-ready {
+  overflow: hidden;
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  aspect-ratio: 1.29;
+  object-fit: contain;
+  background: #ffffff;
+}
+
 .certificate-placeholder p,
 .single-certificate p {
   margin: 12px 20px 0;
@@ -560,6 +582,17 @@ footer a {
 
 .single-certificate {
   min-height: 300px;
+}
+
+.single-certificate.certificate-ready {
+  align-items: stretch;
+  padding: 16px;
+}
+
+.single-certificate .certificate-image {
+  height: auto;
+  max-height: 420px;
+  margin-top: 0;
 }
 
 @media (max-width: 760px) {
