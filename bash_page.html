@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ознайомлення з GNU/Linux, Bash та базовими командами Linux CLI."
+    />
+    <title>Знайомство з Bash і Linux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bash-theme">
+    <header class="bash-hero" id="top">
+      <nav class="nav container" aria-label="Основна навігація">
+        <a class="brand" href="index.html" aria-label="На головну сторінку"
+          ><span class="branch-mark" aria-hidden="true">⌥</span>learn</a
+        >
+        <div class="nav-links">
+          <a href="index.html">Головна</a><a href="#linux">Linux</a
+          ><a href="#commands">Команди</a><a href="#script">Скрипт</a
+          ><a href="#sources">Джерела</a>
+        </div>
+      </nav>
+      <div class="container bash-hero-content">
+        <p class="eyebrow">Короткий навчальний довідник</p>
+        <h1>Знайомство з <span>Bash</span></h1>
+        <p class="lead">
+          Командна оболонка, що допомагає працювати з Linux, файлами та
+          автоматизацією завдань у терміналі.
+        </p>
+        <a class="button" href="#linux"
+          >Дізнатись <span aria-hidden="true">↓</span></a
+        >
+      </div>
+      <div class="hero-line" aria-hidden="true"></div>
+    </header>
+    <main>
+      <section class="section container" id="linux">
+        <div class="two-column">
+          <div><h2>Операційна система GNU/Linux</h2></div>
+          <div class="prose">
+            <p>
+              <strong>GNU/Linux</strong> — це сімейство вільних операційних
+              систем, у якому ядро Linux поєднується з інструментами проєкту GNU
+              та іншими програмами.
+            </p>
+            <p>
+              Linux використовують на серверах, у хмарних платформах, вбудованих
+              пристроях і на персональних комп’ютерах. Система відома гнучкістю,
+              стабільністю та можливістю налаштовувати робоче середовище під
+              власні потреби.
+            </p>
+            <p>
+              <strong>Bash</strong> — одна з найпоширеніших командних оболонок
+              Linux. Вона дає змогу виконувати команди, поєднувати їх у сценарії
+              та автоматизувати повторювані дії.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section tinted" id="distributions">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Популярні дистрибутиви</h2>
+            <p>
+              Дистрибутив — це готова версія Linux з ядром, програмами,
+              менеджером пакунків і власними налаштуваннями.
+            </p>
+          </div>
+          <div class="distro-grid">
+            <article>
+              <b>Ubuntu</b>
+              <p>Поширений дистрибутив для початківців і щоденної роботи.</p>
+            </article>
+            <article>
+              <b>Debian</b>
+              <p>
+                Стабільна система, на основі якої створено багато інших
+                дистрибутивів.
+              </p>
+            </article>
+            <article>
+              <b>Fedora</b>
+              <p>Сучасний дистрибутив із новими версіями програм.</p>
+            </article>
+            <article>
+              <b>Arch Linux</b>
+              <p>Гнучка система для детального налаштування.</p>
+            </article>
+            <article>
+              <b>Linux Mint</b>
+              <p>Зручний варіант для щоденної роботи.</p>
+            </article>
+            <article>
+              <b>openSUSE</b>
+              <p>Дистрибутив із потужними інструментами адміністрування.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="commands">
+        <div class="section-heading-narrow">
+          <h2>10 базових команд Linux CLI</h2>
+          <p>
+            Команди виконують у терміналі. Значення в кутових дужках потрібно
+            замінити власними даними.
+          </p>
+        </div>
+        <div class="cli-grid">
+          <article>
+            <code>pwd</code>
+            <p>Показує поточну робочу папку.</p>
+          </article>
+          <article>
+            <code>echo "текст"</code>
+            <p>Виводить текст у термінал.</p>
+          </article>
+          <article>
+            <code>ls</code>
+            <p>Показує файли та папки.</p>
+          </article>
+          <article>
+            <code>cd &lt;папка&gt;</code>
+            <p>Переходить до папки.</p>
+          </article>
+          <article>
+            <code>touch &lt;файл&gt;</code>
+            <p>Створює порожній файл.</p>
+          </article>
+          <article>
+            <code>mkdir &lt;папка&gt;</code>
+            <p>Створює нову папку.</p>
+          </article>
+          <article>
+            <code>cp &lt;звідки&gt; &lt;куди&gt;</code>
+            <p>Копіює файл або папку.</p>
+          </article>
+          <article>
+            <code>mv &lt;звідки&gt; &lt;куди&gt;</code>
+            <p>Переміщує або перейменовує файл.</p>
+          </article>
+          <article>
+            <code>rm &lt;файл&gt;</code>
+            <p>Видаляє файл.</p>
+          </article>
+          <article>
+            <code>history</code>
+            <p>Показує історію команд.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section script-section" id="script">
+        <div class="container script-layout">
+          <div>
+            <p class="eyebrow">Bash-скрипт</p>
+            <h2>Імітація авторизації</h2>
+            <p>
+              Сценарій запитує ім’я користувача й пароль, а потім перевіряє
+              введені значення. Це навчальний приклад, а не безпечний спосіб
+              зберігати паролі.
+            </p>
+          </div>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span><b>login.sh</b>
+            </div>
+            <pre><code>#!/usr/bin/env bash
+
+read -p "Логін: " login
+read -s -p "Пароль: " password
+echo
+
+if [[ "$login" == "student" &amp;&amp; "$password" == "linux" ]]; then
+  echo "Вітаємо, $login! Авторизацію виконано."
+else
+  echo "Помилка: неправильний логін або пароль."
+fi</code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="sources" id="sources">
+        <div class="container sources-inner">
+          <div>
+            <h2>Джерела</h2>
+            <p>
+              Документація та матеріали для подальшого знайомства з GNU/Linux і
+              Bash.
+            </p>
+          </div>
+          <ol class="source-list">
+            <li>
+              <a
+                href="https://www.gnu.org/gnu/linux-and-gnu.html"
+                target="_blank"
+                rel="noreferrer"
+                ><span>GNU</span><strong>Linux and the GNU System</strong
+                ><em>↗</em></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.gnu.org/software/bash/manual/"
+                target="_blank"
+                rel="noreferrer"
+                ><span>GNU</span><strong>Bash Reference Manual</strong
+                ><em>↗</em></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wiki.archlinux.org/title/Command-line_shell"
+                target="_blank"
+                rel="noreferrer"
+                ><span>ArchWiki</span><strong>Command-line shell</strong
+                ><em>↗</em></a
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <span class="brand"
+          ><span class="branch-mark" aria-hidden="true">⌥</span>bash</span
+        ><span>Згенеровано за допомогою ШІ: ChatGPT</span
+        ><a href="#top">На початок ↑</a>
+      </div>
+    </footer>
+    <script src="bash_page.js"></script>
+  </body>
+</html>
