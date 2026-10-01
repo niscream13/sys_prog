@@ -445,19 +445,19 @@ footer a {
 }
 
 .bash-theme {
-  --ink: #10294a;
-  --muted: #4d6681;
-  --paper: #f4f8ff;
-  --sand: #dcecff;
-  --clay: #4fa9eb;
-  --rust: #1767ad;
-  --line: #b9d4ee;
-  --card: #ffffff;
+  --ink: #20252b;
+  --muted: #59636e;
+  --paper: #f7f8fa;
+  --sand: #eef0f3;
+  --clay: #5ea8e6;
+  --rust: #4c8fc9;
+  --line: #d4d9df;
+  --card: #fbfcfd;
   background: var(--paper);
 }
 
 .bash-theme .bash-hero {
-  background: linear-gradient(135deg, #061f4b, #0b3774);
+  background: linear-gradient(135deg, #15191f, #242b34);
 }
 
 .bash-theme .nav-links a {
@@ -496,7 +496,7 @@ footer a {
 
 .bash-theme .tinted,
 .bash-theme .script-section {
-  background: #e7f2ff;
+  background: #eef0f3;
 }
 
 .bash-theme .distro-grid article,
@@ -541,7 +541,24 @@ footer a {
   border: 1px solid #0b3774;
   border-radius: 18px;
   background: linear-gradient(135deg, #061f4b, #0b3774);
-  box-shadow: 5px 5px 0 #c9e3f8;
+  box-shadow: 5px 5px 0 #303944;
+}
+
+.bash-theme .command-example {
+  display: grid;
+  gap: 4px;
+  margin-top: 18px;
+  padding: 10px 12px;
+  border-left: 2px solid #72bfff;
+  background: rgba(0, 0, 0, 0.18);
+  color: #c8d4e0;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.bash-theme .command-example span:first-child {
+  color: #8bcbff;
 }
 
 .bash-theme .cli-grid {
@@ -604,13 +621,13 @@ footer a {
 }
 
 .bash-theme .terminal-window {
-  border-color: #082752;
-  background: #061f4b;
-  box-shadow: 8px 8px 0 #bddbf3;
+  border-color: #394451;
+  background: #151a20;
+  box-shadow: 8px 8px 0 #303944;
 }
 
 .bash-theme .terminal-bar {
-  background: #092e61;
+  background: #272e38;
 }
 
 .bash-theme .terminal-bar span {
@@ -630,7 +647,7 @@ footer a {
 }
 
 .bash-theme .sources {
-  background: #061d43;
+  background: #15191f;
 }
 
 .bash-theme .source-list,
@@ -644,12 +661,101 @@ footer a {
 }
 
 .bash-theme footer {
-  background: #041735;
-  color: #b7d8f1;
+  background: #101318;
+  color: #aab5c3;
 }
 
 .bash-theme footer a {
-  color: #dff1ff;
+  color: #dceeff;
+}
+
+.bash-theme .distro-grid article {
+  border-color: #d4d9df;
+  background: #fbfcfd;
+}
+
+.bash-theme .distro-grid b {
+  color: #82c8ff;
+}
+
+.bash-theme .distro-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bash-theme .distro-logo {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  color: #72bfff;
+}
+
+.interactive-terminal-section {
+  background: #eef0f3;
+}
+
+.interactive-terminal {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 42px auto 0;
+  border: 1px solid #3c4653;
+  border-radius: 14px;
+  background: #12161b;
+  box-shadow: 8px 8px 0 #303944;
+  color: #dceeff;
+  font-family: "DM Mono", monospace;
+}
+
+.interactive-terminal .terminal-bar {
+  border-bottom: 1px solid #3c4653;
+  background: #272e38;
+}
+
+.terminal-output {
+  min-height: 260px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 24px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.terminal-output p {
+  margin: 0;
+}
+
+.terminal-output .terminal-command {
+  color: #8bcbff;
+}
+
+.terminal-output .terminal-error {
+  color: #ffaaa0;
+}
+
+.terminal-input-row {
+  display: flex;
+  gap: 10px;
+  padding: 16px 24px;
+  border-top: 1px solid #3c4653;
+  background: #181d23;
+}
+
+.terminal-input-row label {
+  flex: 0 0 auto;
+  color: #72bfff;
+  font-size: 0.9rem;
+}
+
+.terminal-input-row input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #f1f5f9;
+  font: inherit;
 }
 
 .home-hero-content {

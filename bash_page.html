@@ -25,6 +25,7 @@
         <div class="nav-links">
           <a href="index.html">Головна</a><a href="#linux">Linux</a
           ><a href="#commands">Команди</a><a href="#script">Скрипт</a
+          ><a href="#practice">Практика</a
           ><a href="#sources">Джерела</a>
         </div>
       </nav>
@@ -76,30 +77,48 @@
           </div>
           <div class="distro-grid">
             <article>
-              <b>Ubuntu</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/ubuntu.svg" alt="" />
+                <b>Ubuntu</b>
+              </div>
               <p>Поширений дистрибутив для початківців і щоденної роботи.</p>
             </article>
             <article>
-              <b>Debian</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/debian.svg" alt="" />
+                <b>Debian</b>
+              </div>
               <p>
                 Стабільна система, на основі якої створено багато інших
                 дистрибутивів.
               </p>
             </article>
             <article>
-              <b>Fedora</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/fedora.svg" alt="" />
+                <b>Fedora</b>
+              </div>
               <p>Сучасний дистрибутив із новими версіями програм.</p>
             </article>
             <article>
-              <b>Arch Linux</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/archlinux.svg" alt="" />
+                <b>Arch Linux</b>
+              </div>
               <p>Гнучка система для детального налаштування.</p>
             </article>
             <article>
-              <b>Linux Mint</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/linuxmint.svg" alt="" />
+                <b>Linux Mint</b>
+              </div>
               <p>Зручний варіант для щоденної роботи.</p>
             </article>
             <article>
-              <b>openSUSE</b>
+              <div class="distro-card-header">
+                <img class="distro-logo" src="assets/distro-logos/opensuse.svg" alt="" />
+                <b>openSUSE</b>
+              </div>
               <p>Дистрибутив із потужними інструментами адміністрування.</p>
             </article>
           </div>
@@ -117,42 +136,52 @@
           <article>
             <code>pwd</code>
             <p>Показує поточну робочу папку.</p>
+            <div class="command-example"><span>$ pwd</span><span>/home/student</span></div>
           </article>
           <article>
             <code>echo "текст"</code>
             <p>Виводить текст у термінал.</p>
+            <div class="command-example"><span>$ echo "Привіт"</span><span>Привіт</span></div>
           </article>
           <article>
             <code>ls</code>
             <p>Показує файли та папки.</p>
+            <div class="command-example"><span>$ ls</span><span>notes.txt&nbsp; projects&nbsp; todo.md</span></div>
           </article>
           <article>
             <code>cd &lt;папка&gt;</code>
             <p>Переходить до папки.</p>
+            <div class="command-example"><span>$ cd projects</span><span>$ pwd → /home/student/projects</span></div>
           </article>
           <article>
             <code>touch &lt;файл&gt;</code>
             <p>Створює порожній файл.</p>
+            <div class="command-example"><span>$ touch notes.txt</span><span>Створено файл notes.txt</span></div>
           </article>
           <article>
             <code>mkdir &lt;папка&gt;</code>
             <p>Створює нову папку.</p>
+            <div class="command-example"><span>$ mkdir practice</span><span>Створено папку practice</span></div>
           </article>
           <article>
             <code>cp &lt;звідки&gt; &lt;куди&gt;</code>
             <p>Копіює файл або папку.</p>
+            <div class="command-example"><span>$ cp notes.txt copy.txt</span><span>Створено копію copy.txt</span></div>
           </article>
           <article>
             <code>mv &lt;звідки&gt; &lt;куди&gt;</code>
             <p>Переміщує або перейменовує файл.</p>
+            <div class="command-example"><span>$ mv copy.txt archive.txt</span><span>Файл перейменовано</span></div>
           </article>
           <article>
             <code>rm &lt;файл&gt;</code>
             <p>Видаляє файл.</p>
+            <div class="command-example"><span>$ rm archive.txt</span><span>Файл видалено</span></div>
           </article>
           <article>
             <code>history</code>
             <p>Показує історію команд.</p>
+            <div class="command-example"><span>$ history</span><span>1&nbsp; pwd&nbsp; 2&nbsp; ls</span></div>
           </article>
         </div>
       </section>
@@ -182,6 +211,28 @@ if [[ "$login" == "student" &amp;&amp; "$password" == "linux" ]]; then
 else
   echo "Помилка: неправильний логін або пароль."
 fi</code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="section interactive-terminal-section" id="practice">
+        <div class="container">
+          <div class="section-heading-narrow">
+            <p class="eyebrow">Практика</p>
+            <h2>Спробуй команди у віртуальному терміналі</h2>
+            <p>
+              Це безпечна навчальна симуляція: команди працюють лише з
+              віртуальними файлами цієї сторінки. Почни з <code>help</code> або <code>ls</code>.
+            </p>
+          </div>
+          <div class="interactive-terminal" aria-label="Навчальний Bash-термінал">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span><b>student@linux: ~</b>
+            </div>
+            <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+            <form class="terminal-input-row" id="terminal-form">
+              <label for="terminal-input" id="terminal-prompt">student@linux:~$</label>
+              <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" aria-label="Введіть команду Bash" />
+            </form>
           </div>
         </div>
       </section>
